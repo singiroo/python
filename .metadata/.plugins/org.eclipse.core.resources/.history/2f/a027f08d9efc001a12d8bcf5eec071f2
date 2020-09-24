@@ -1,0 +1,11 @@
+a = 0
+b = 'aa'
+c = "false"
+d = True
+# print("a:"+a)
+print("b:"+b)
+print("c:"+c)
+print("d:"+d)
+
+
+

@@ -1,0 +1,87 @@
+-- VERSION_5
+-- START DISKCACHE_3
+D:\A_TeachingMaterial\8.Python\.metadata\.plugins\org.eclipse.core.resources\.projects\HelloPython\com.python.pydev.analysis\v2_indexcache
+day03.Myoop03|1600926503385377000|D:\A_TeachingMaterial\8.Python\HelloPython\day03\Myoop03.py
+day02.ArrayTest|1600838271292548000|D:\A_TeachingMaterial\8.Python\HelloPython\day02\ArrayTest.py
+day02.MyFunc01|1600840385379331000|D:\A_TeachingMaterial\8.Python\HelloPython\day02\MyFunc01.py
+day02.MyFunc02|1600840497368950000|D:\A_TeachingMaterial\8.Python\HelloPython\day02\MyFunc02.py
+day02.MyFunc03|1600840985347896000|D:\A_TeachingMaterial\8.Python\HelloPython\day02\MyFunc03.py
+day02.MyFunc04|1600844149705411000|D:\A_TeachingMaterial\8.Python\HelloPython\day02\MyFunc04.py
+day02.Myoop02|1600923635883000000|D:\A_TeachingMaterial\8.Python\HelloPython\day02\Myoop02.py
+day02.ArrayTest2|1600840018117179000|D:\A_TeachingMaterial\8.Python\HelloPython\day02\ArrayTest2.py
+day02.Myoop01|1600926054197245000|D:\A_TeachingMaterial\8.Python\HelloPython\day02\Myoop01.py
+day01.hello|1600756565890717000|D:\A_TeachingMaterial\8.Python\HelloPython\day01\hello.py
+day01.MyFor|1600759963957516000|D:\A_TeachingMaterial\8.Python\HelloPython\day01\MyFor.py
+day01.MyGawi|1600836533611346000|D:\A_TeachingMaterial\8.Python\HelloPython\day01\MyGawi.py
+day01.Variable|1600757165468936000|D:\A_TeachingMaterial\8.Python\HelloPython\day01\Variable.py
+day01.Myif|1600758219675546000|D:\A_TeachingMaterial\8.Python\HelloPython\day01\Myif.py
+day01.Myrandom|1600761519100498000|D:\A_TeachingMaterial\8.Python\HelloPython\day01\Myrandom.py
+-- END DISKCACHE
+-- START DICTIONARY
+33
+32=Human.__init__
+6=day03.Myoop03
+29=Bird
+20=day02.ArrayTest
+23=D:\A_TeachingMaterial\8.Python\HelloPython\day01\MyGawi.py
+12=day02.Myoop02
+17=D:\A_TeachingMaterial\8.Python\HelloPython\day01\Variable.py
+8=day02.ArrayTest2
+14=day02.Myoop01
+18=day01.Variable
+4=day01.Myif
+26=day01.Myrandom
+15=D:\A_TeachingMaterial\8.Python\HelloPython\day02\MyFunc04.py
+13=D:\A_TeachingMaterial\8.Python\HelloPython\day02\Myoop01.py
+30=Animal.__init__
+9=D:\A_TeachingMaterial\8.Python\HelloPython\day02\MyFunc02.py
+27=Human
+31=Bird.__init__
+19=D:\A_TeachingMaterial\8.Python\HelloPython\day02\ArrayTest.py
+33=Human.changeName
+3=D:\A_TeachingMaterial\8.Python\HelloPython\day01\Myif.py
+2=day02.MyFunc01
+25=D:\A_TeachingMaterial\8.Python\HelloPython\day01\Myrandom.py
+5=D:\A_TeachingMaterial\8.Python\HelloPython\day03\Myoop03.py
+10=day02.MyFunc02
+22=day02.MyFunc03
+16=day02.MyFunc04
+7=D:\A_TeachingMaterial\8.Python\HelloPython\day02\ArrayTest2.py
+24=day01.MyGawi
+28=Animal
+11=D:\A_TeachingMaterial\8.Python\HelloPython\day02\Myoop02.py
+21=D:\A_TeachingMaterial\8.Python\HelloPython\day02\MyFunc03.py
+1=D:\A_TeachingMaterial\8.Python\HelloPython\day02\MyFunc01.py
+-- END DICTIONARY
+-- START TREE 1
+16
+a|10|a!1^4#1*19@a!3^1#1*35@a!5^9#5*51@a!7^1#1*67@a!9^4#1*83@a!11^28#5*99@a!13^35#5*115@a!15^6#1*131@a!17^1#1*147@a!19^1#1*163@
+add|2|addsub!21^1#5*178@add!1^1#5*18@
+ani|2|Animal!11^5#7*97@Animal!13^5#7*113@
+b|9|b!15^7#1*131@b!13^40#5*115@b!17^2#1*147@b!7^2#1*67@b!19^2#1*163@b!3^2#1*35@b!1^7#1*19@b!5^10#5*51@b!11^33#5*99@
+bir|1|Bird!13^13#7*113@
+c|1|c!17^3#1*147@
+com|2|com!23^4#1*195@com!25^5#1*211@
+d|1|d!17^4#1*147@
+gaw|1|gawi!23^2#1*195@
+hum|3|Human!13^21#7*113@Human!11^14#7*97@Human!5^1#7*49@
+i|2|i!23^9#1*195@i!25^4#1*211@
+inc|2|increase!15^1#5*130@increaseRef!15^3#5*130@
+min|2|mine!23^5#1*195@mine!25^13#1*211@
+new|2|newName!11^27#5*99@newName!13^34#5*115@
+res|1|res!23^6#1*195@
+sub|1|sub!9^1#5*82@
+-- END TREE
+-- START TREE 2
+10
+__d|1|__del__!27&5^5#9*50@
+__i|6|__init__!27&5^2#9*50@__init__!28&13^6#9*114@__init__!29&13^14#9*114@__init__!27&13^23#9*114@__init__!28&11^6#9*98@__init__!27&11^16#9*98@
+age|2|age!30&13^7#9*115@age!30&11^8#9*99@
+cha|2|changeName!27&13^28#9*114@changeName!27&11^21#9*98@
+dis|0|
+fly|1|fly!29&13^17#9*114@
+get|2|getOlder!28&11^10#9*98@getOlder!28&13^9#9*114@
+myd|1|mydist!31&13^15#9*115@
+nam|5|name!32&11^19#9*99@name!33&11^22#9*99@name!32&5^3#9*51@name!32&13^26#9*115@name!33&13^29#9*115@
+sel|0|
+-- END TREE

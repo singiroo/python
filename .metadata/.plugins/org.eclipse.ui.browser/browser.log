@@ -1,0 +1,6 @@
+
+9월 23, 2020 14:42:30.43 NEW SESSION
+9월 23, 2020 14:42:30.43 [10644:3328:0923/144230.433:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 23, 2020 14:42:42.22 [10644:12272:0923/144242.220:ERROR:get_updates_processor.cc(258)] PostClientToServerMessage() failed during GetUpdates with error 2
+9월 23, 2020 14:43:29.01 [13508:7736:0923/144329.016:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 23, 2020 14:43:40.22 [13508:10392:0923/144340.219:ERROR:get_updates_processor.cc(258)] PostClientToServerMessage() failed during GetUpdates with error 2

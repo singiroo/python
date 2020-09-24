@@ -1,0 +1,15 @@
+class Animal:
+    
+    age = 0
+    
+    def getOlder(self):
+        self.age += 1
+        
+         
+ 
+ 
+ 
+ 
+ 
+ 
+     

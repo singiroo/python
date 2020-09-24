@@ -1,0 +1,19 @@
+a = True
+b = False
+if a:
+    print("ok")
+    
+b = 95
+if a:
+    print("ok")
+   
+if 90<=b and b<100 :
+    print("수")
+elif 80<=b and b<90:
+    print("우")
+elif 70<=b and b<80:
+    print("미")
+elif 60<=b and b<70:
+    print("양")
+else:
+    print("가")

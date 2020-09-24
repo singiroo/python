@@ -1,0 +1,4 @@
+a = [1,2,2]
+b = ["abc", "cde", "efg", "ghi"]
+
+print(a)

@@ -1,0 +1,5 @@
+from random import *
+
+
+i = randint(1,2)
+print(i)

@@ -1,0 +1,13 @@
+from random import *
+
+
+i = randint(1,2)
+print(i)
+res = int(input("숫자를 입력하세요"))
+
+
+if (res %2 ==0):
+    print("짝")
+else:
+    print("홀")
+    

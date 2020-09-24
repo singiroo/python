@@ -1,0 +1,5 @@
+a = [1,2,2]
+b = ["abc", "cde", "efg", "ghi"]
+
+for i in a:
+    print(i)

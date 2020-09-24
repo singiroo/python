@@ -1,0 +1,16 @@
+def increase(a):
+    a++
+def increaseRef(a):
+    a[0]++
+
+
+
+
+
+print(a)
+print(b)
+
+
+
+
+

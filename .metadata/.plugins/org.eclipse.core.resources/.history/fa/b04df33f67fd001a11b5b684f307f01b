@@ -1,0 +1,33 @@
+package Test;
+
+public class CallbyRef {
+	
+	
+	
+	//a => value
+	public static int add(int a) {
+		return a++;
+	}
+
+	public static int[] addRef(int[] a) {
+		a[0]++;
+		return a;
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+}

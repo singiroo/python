@@ -1,0 +1,25 @@
+package Test;
+
+public class CallbyRef {
+	
+	public static int add(int a) {
+		return a++;
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+}

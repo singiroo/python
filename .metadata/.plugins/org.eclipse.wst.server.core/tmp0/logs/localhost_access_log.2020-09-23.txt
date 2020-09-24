@@ -1,0 +1,8 @@
+127.0.0.1 - - [23/Sep/2020:14:40:18 +0900] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [23/Sep/2020:14:40:19 +0900] "GET /HelloWeb/Arrayhtml.html HTTP/1.1" 200 226
+0:0:0:0:0:0:0:1 - - [23/Sep/2020:14:41:37 +0900] "GET /HelloWeb/Arrayhtml.html HTTP/1.1" 200 288
+0:0:0:0:0:0:0:1 - - [23/Sep/2020:14:41:37 +0900] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [23/Sep/2020:14:42:07 +0900] "GET /HelloWeb/Arrayhtml.html HTTP/1.1" 200 245
+0:0:0:0:0:0:0:1 - - [23/Sep/2020:14:42:31 +0900] "GET /HelloWeb/Arrayhtml.html HTTP/1.1" 304 -
+127.0.0.1 - - [23/Sep/2020:14:43:28 +0900] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [23/Sep/2020:14:43:30 +0900] "GET /HelloWeb/Arrayhtml.html HTTP/1.1" 200 241
