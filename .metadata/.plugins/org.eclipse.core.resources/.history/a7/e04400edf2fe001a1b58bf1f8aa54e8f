@@ -1,0 +1,56 @@
+package day04;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+
+public class FrOmok01 extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FrOmok01 frame = new FrOmok01();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public FrOmok01() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 655, 500);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+	
+		JLabel[] lbls = new JLabel[10];
+		for(int i=0; i<10; i++) {
+			lbls[i] = new JLabel("New label");
+			lbls[i].setIcon(new ImageIcon(FrOmok01.class.getResource("/day04/0.jpg")));
+			lbls[i].setBounds(0+(75*i), 0, 75, 75);
+			JLabel lbl =lbls[i];
+			contentPane.add(lbl);
+		}
+//		JLabel lbl = new JLabel("New label");
+//		for(int i=0; i<10; i++) {
+//			new JLabel("New label"); 
+//		}
+	}
+}

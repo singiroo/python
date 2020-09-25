@@ -4,4 +4,7 @@
 <fullyQualifiedTypeName name="day02.Human"/>
 <fullyQualifiedTypeName name="day02.Animal"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+<fullyQualifiedTypeName name="java.awt.event.MouseAdapter"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
 </qualifiedTypeNameHistroy>
