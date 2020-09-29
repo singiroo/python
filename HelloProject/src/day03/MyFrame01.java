@@ -12,6 +12,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.SwingConstants;
 
 public class MyFrame01 extends JFrame {
 
@@ -46,6 +47,7 @@ public class MyFrame01 extends JFrame {
 		contentPane.setLayout(null); //null¿Ã absoulute layout
 		
 		lbl = new JLabel("hello");
+		lbl.setHorizontalAlignment(SwingConstants.CENTER);
 		lbl.setBounds(29, 28, 132, 15);
 		contentPane.add(lbl);
 		

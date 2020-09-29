@@ -1,6 +1,0 @@
-from random import *
-com = ["가위","바위","보"]
-
-mine = ""
-
-randint

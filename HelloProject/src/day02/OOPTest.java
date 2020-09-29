@@ -7,6 +7,9 @@ public class OOPTest {
 		
 		Human hume = new Human();
 		
+		hume.changeName("°­°¨Âù");
+		hume.getOlder();
+		
 		
 		
 		
