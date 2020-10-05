@@ -1,0 +1,5 @@
+f = open("D:\A_TeachingMaterial\8.Python\HelloPython\day08\myfile",'r')
+lines = f.readlines()
+for line in lines:
+    print(line)
+f.close()

@@ -1,0 +1,11 @@
+import sqlite3
+
+print("oracle")
+
+conn = sqlite3.connect("mydb.db")
+cursor = conn.cursor()
+sql = "insert into mytable values(5, 5, 5)"
+cursor.execute(sql)
+
+
+conn.close()

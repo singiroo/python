@@ -1,0 +1,12 @@
+import sqlite3
+
+print("sqlite3")
+
+conn = sqlite3.connect("mydb.db")
+cursor = conn.cursor()
+sql = "delete from mytable where col01 = ?"
+data = ('12',)
+cursor.execute(sql,data)
+
+conn.commit()
+conn.close()

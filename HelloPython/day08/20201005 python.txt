@@ -1,0 +1,22 @@
+20201005 python 수업 내용
+
+0.python 파일 reading 작성
+  1) open & close
+  2) with 구문 사용
+     with open(~) as f:  
+
+python db 연동
+
+anaconda prompt 이용하여 cx_Oracle 라이브러리 설치
+input order : conda install cx_Oracle
+
+1. Oracle 연동 
+ CRUD 테스트
+
+sqlite3는 anaconda에 내장으로 별도 설치 없음
+db browser for sqlite3는 설치 함(sqldeveloper와 같은 역할)
+browser이용하여 mydb.db파일 및 mytable 테이블 생성
+
+2. Sqlite3 연동
+ CRUD 테스트(과제)
+ 과제 수행 완료
