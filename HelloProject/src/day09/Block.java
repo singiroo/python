@@ -15,6 +15,25 @@ public class Block {
 	public int i = 1;			//2차원 배열에서의 블록의 기준점의 i좌표
 	public int j = 5;			//2차원 배열에서의 블록의 기준점 j좌표
 	
+	
+	
+	
+	
+	public Block(int kind) {
+		this.kind = kind;
+	}
+	
+	public Block() {
+	
+	}
+
+	public void init() {
+		kind = (int)(Math.random()*7+1);
+		status = 1;
+		i = 1;
+		j = 5;
+	}
+	
 	@Override
 	public String toString() {
 		return "Block [kind=" + kind + ", status=" + status + ", i=" + i + ", j=" + j + "]";

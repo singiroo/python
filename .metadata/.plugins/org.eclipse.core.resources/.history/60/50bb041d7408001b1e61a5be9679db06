@@ -1,0 +1,33 @@
+package day09;
+
+/**
+ * 테트리스 블록을 나타내는 클래스
+ * 블록의 타입
+ * 해당 블록의 상태
+ * 블록의 기준점 좌표 정보
+ * @author PC-25
+ *
+ */
+public class Block {
+
+	public int kind = 7 ;		//블록의  타입 (1 ~ 7). 예시로 7이라 가정함 
+	public int status = 1;		//블록의 상태(블록이 회전한 모습). 예시로 하나의 모양을 1로 가정함
+	public int i = 1;			//2차원 배열에서의 블록의 기준점의 i좌표
+	public int j = 5;			//2차원 배열에서의 블록의 기준점 j좌표
+	
+	
+	public Block(int kind) {
+		this.kind = kind;
+	}
+	
+	public Block() {
+	
+	}
+
+	@Override
+	public String toString() {
+		return "Block [kind=" + kind + ", status=" + status + ", i=" + i + ", j=" + j + "]";
+	}
+	
+
+}
