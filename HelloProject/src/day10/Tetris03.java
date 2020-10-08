@@ -11,21 +11,27 @@ import javax.swing.border.EmptyBorder;
 import day09.Block;
 
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Color;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+import java.awt.Font;
 
 public class Tetris03 extends JFrame {
 
 	private JPanel contentPane;
 	private JLabel lbl;
+	private JLabel lblRow;
+	private JLabel lblDisp;
 	private JLabel[][] lblArray2d = new JLabel[20][10]; // 전체 게임판
-	public Block block = new Block((int)(Math.random()*7+1)); 				//블록 객체
+	public Block block = new Block(); 				//블록 객체
 	
 	public int[][] block2D = new int[20][10];		//내려오는 블록의 배열
 	public int[][] stack2D = new int[20][10];		//아래에 쌓여있는 블록의 배열
 	public int[][] scrin2D = new int[20][10];		//게임 진행 화면의 배열
-	
+	public boolean flagIng = true;
 
 	/**
 	 * Launch the application.
@@ -47,6 +53,11 @@ public class Tetris03 extends JFrame {
 	 * Create the frame.
 	 */
 	public Tetris03() {
+		
+		
+		
+		
+		
 		addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
@@ -54,19 +65,29 @@ public class Tetris03 extends JFrame {
 			}
 		});
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 270, 600);
+		setBounds(100, 100, 564, 697);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		lblDisp = new JLabel("\uBAA9\uD45C : ");
+		lblDisp.setFont(new Font("굴림", Font.PLAIN, 15));
+		lblDisp.setBounds(283, 31, 57, 15);
+		contentPane.add(lblDisp);
+		
+		lblRow = new JLabel("1");
+		lblRow.setFont(new Font("굴림", Font.PLAIN, 15));
+		lblRow.setBounds(341, 31, 57, 15);
+		contentPane.add(lblRow);
+		
 		setBlock2DWithBlock();
 		
 		
-		stack2D[19][0] = 12;
-		stack2D[19][1] = 12;
-		stack2D[19][2] = 12;
-		stack2D[19][3] = 12;
+		stack2D[19][0] = 11;
+		stack2D[19][1] = 11;
+		stack2D[19][2] = 11;
+		stack2D[19][3] = 11;
 		
 		//전체 게임판 생성
 		for(int i=0;i<lblArray2d.length;i++) {
@@ -85,6 +106,19 @@ public class Tetris03 extends JFrame {
 		System.out.println(block);
 		print2D(block2D);
 		print2D(stack2D);
+		
+		new Thread() {
+			@Override
+			public void run() {
+				try {
+					while(flagIng) {
+						Thread.sleep(1000);
+						realPress(KeyEvent.VK_DOWN);						
+					}
+				} catch (InterruptedException e) {
+				}
+			}
+		}.start();
 	}
 	
 	public void myRender() {
@@ -140,28 +174,38 @@ public class Tetris03 extends JFrame {
 		}
 	}
 	
+	public void myPress(KeyEvent e) {
+		realPress(e.getKeyCode());
+	}
+	
+
 	/**
 	 * 방향키 입력시 블록이 움직이는 메서드
 	 * @param e		키입력 이벤트
 	 */
-	public void myPress(KeyEvent e) {
+	public void realPress(int keyCode) {
 		boolean flag_col_bound = false;
 		boolean flag_down = false;
 		int pre_status = block.status;
 		int pre_i = block.i;
 		int pre_j = block.j;
 		
-		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
+		if(!flagIng) {
+			return;
+		}
+		
+		
+		if(keyCode == KeyEvent.VK_LEFT) {
 			block.j--;
 		}
-		if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
+		if(keyCode == KeyEvent.VK_RIGHT) {
 			block.j++;
 		}
-		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+		if(keyCode == KeyEvent.VK_DOWN) {
 			block.i++;
 			flag_down = true;
 		}
-		if(e.getKeyCode() == KeyEvent.VK_UP ) {
+		if(keyCode == KeyEvent.VK_UP ) {
 			changeBlockStatus();
 		}
 		System.out.println(block);
@@ -173,6 +217,7 @@ public class Tetris03 extends JFrame {
 			flag_col_bound = true;
 		}
 		
+		
 		moveStackBlockToScrin();
 		
 		boolean flag_collision = isCollision();
@@ -183,10 +228,60 @@ public class Tetris03 extends JFrame {
 			setBlock2DWithBlock();
 			moveStackBlockToScrin();
 			if(flag_down) {
+				
 				moveBlockToStack();
+				
+				ArrayList<String> notFullStack = getNotFullStack(); //지워지지 않는 줄의 정보
+				int cnt10 = 20 - notFullStack.size(); // 지워지는 줄의 수
+				if(cnt10 > 0) {
+					lblRow.setText(String.valueOf(Integer.parseInt(lblRow.getText())-cnt10));					
+				}
+				
+				if(Integer.parseInt(lblRow.getText()) <= 0) {
+					JOptionPane.showMessageDialog(null, "이김.");
+					flagIng = false;
+					return;
+				}
+				
+				for(int i=0; i<stack2D[4].length; i++) {
+					if(stack2D[4][i] > 0) {
+						JOptionPane.showMessageDialog(null, "졌음");
+						flagIng = false;
+						return;
+					}
+				}
+				
+				
+//				int cnt10 = getCnt10();
+				
+				System.out.println("cnt10 :" + cnt10);
+				
+				for(int i=0; i<cnt10; i++) {
+					notFullStack.add(0,"0,0,0,0,0,0,0,0,0,0"); // 지워지는 줄의 수만큼 위쪽의 줄을 더해줌
+				}
+				
+				for(int i=0; i<notFullStack.size(); i++ ) {
+					String line = notFullStack.get(i);
+					String[] data = line.split(",");
+					stack2D[i][0] = Integer.parseInt(data[0]);
+					stack2D[i][1] = Integer.parseInt(data[1]);
+					stack2D[i][2] = Integer.parseInt(data[2]);
+					stack2D[i][3] = Integer.parseInt(data[3]);
+					stack2D[i][4] = Integer.parseInt(data[4]);
+					stack2D[i][5] = Integer.parseInt(data[5]);
+					stack2D[i][6] = Integer.parseInt(data[6]);
+					stack2D[i][7] = Integer.parseInt(data[7]);
+					stack2D[i][8] = Integer.parseInt(data[8]);
+					stack2D[i][9] = Integer.parseInt(data[9]);
+				}
+				
+				
+				
+				
 				block.init();
 				setBlock2DWithBlock();
 				moveStackBlockToScrin();
+			
 			}
 		}
 		
@@ -198,6 +293,48 @@ public class Tetris03 extends JFrame {
 		
 		print2D(scrin2D); // 내려오는 블록을 화면에 표시함(콘솔)
 	}
+	
+	public ArrayList<String> getNotFullStack() {
+		ArrayList<String> stack_temp = new ArrayList<>();
+		
+		for(int i=0; i<stack2D.length;i++) {
+			int[] tmp = stack2D[i];
+			if(					// 블록이 지워지는 조건
+				tmp[0] > 0 &&
+				tmp[1] > 0 &&
+				tmp[2] > 0 &&
+				tmp[3] > 0 &&
+				tmp[4] > 0 &&
+				tmp[5] > 0 &&
+				tmp[6] > 0 &&
+				tmp[7] > 0 &&
+				tmp[8] > 0 &&
+				tmp[9] > 0
+			  ) {
+			}else {
+				String str_line = tmp[0]+","+tmp[1]+","+tmp[2]+","+tmp[3]+","+tmp[4]+","+tmp[5]+","+tmp[6]+","+tmp[7]+","+tmp[8]+","+tmp[9]; // 다 채워지지 않은 블록
+				stack_temp.add(str_line);
+			}
+		}
+		return stack_temp;
+	}
+	
+	public int getCnt10() {
+		int cnt = 0;
+		for(int i=0; i<stack2D.length;i++) {
+			for(int j = 0; j<stack2D[i].length;j++) {
+				if(stack2D[i][j] == 0) {
+					break;
+				}else if(j == stack2D[i].length -1) {
+					cnt++;
+				}
+			}
+		}
+		
+		return cnt;
+	}
+	
+	
 	
 	public void moveBlockToStack() {
 		for(int i=0;i<block2D.length;i++) {
@@ -429,10 +566,4 @@ public class Tetris03 extends JFrame {
 			System.out.println();
 		}
 	}
-	
-	
-	
-	
-	
-
 }

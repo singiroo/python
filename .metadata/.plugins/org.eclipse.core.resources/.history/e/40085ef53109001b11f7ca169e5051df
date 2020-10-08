@@ -1,0 +1,16 @@
+package day11;
+
+public class ThreadTest {
+	public static void main(String[] args) {
+	
+		new Thread() {
+			@Override
+			public void run() {
+				System.out.println("hello");
+			}
+		}
+		
+		
+		
+	}
+}

@@ -1,0 +1,15 @@
+package day10;
+
+import java.util.ArrayList;
+
+public class ArrayListTest {
+	
+	public static void main(String[] args) {
+		ArrayList<String> arr = new ArrayList<>();
+		
+		arr.add("»ç°ú");
+		arr.add("±Ö");
+		arr.add(0, "Æ÷µµ");
+		
+	}
+}
