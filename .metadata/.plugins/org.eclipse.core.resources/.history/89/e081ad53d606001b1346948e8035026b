@@ -1,5 +1,0 @@
-f = open("",'r')
-lines = f.readLine()
-for line in lines:
-    print(line)
-f.close()

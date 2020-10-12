@@ -1,2 +1,0 @@
-f = open("",'r')
-line = f.readLine()

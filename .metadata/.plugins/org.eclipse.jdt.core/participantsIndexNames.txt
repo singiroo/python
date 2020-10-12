@@ -1,0 +1,3 @@
+INDEX VERSION 1.130
+D:\A_TeachingMaterial\8.Python\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3025964818.index
+\HelloWeb\src

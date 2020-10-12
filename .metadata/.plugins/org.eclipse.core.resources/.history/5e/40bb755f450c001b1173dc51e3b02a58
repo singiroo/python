@@ -1,0 +1,22 @@
+import threading
+ 
+def printChar(start, stop):
+    for i in range(start, stop):
+        print(chr(i))
+    
+    
+    
+    
+def printNumber(strat, stop):
+    for i in range(start, stop):
+        print(i)
+ 
+ 
+ 
+ 
+if __name__ == '__main__':
+      
+    t = threading.Thread(target=sum, args=(1, 100000))
+    t.start()
+ 
+    print("Main Thread")

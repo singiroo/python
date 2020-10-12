@@ -3879,6 +3879,7 @@ bs4.builder._lxml|D:\Anaconda3\lib\site-packages\bs4\builder\_lxml.py
 bs4.dammit|D:\Anaconda3\lib\site-packages\bs4\dammit.py
 bs4.diagnose|D:\Anaconda3\lib\site-packages\bs4\diagnose.py
 bs4.element|D:\Anaconda3\lib\site-packages\bs4\element.py
+bs4.formatter|D:\Anaconda3\lib\site-packages\bs4\formatter.py
 bs4.testing|D:\Anaconda3\lib\site-packages\bs4\testing.py
 bs4.tests.__init__|D:\Anaconda3\lib\site-packages\bs4\tests\__init__.py
 bs4.tests.test_builder_registry|D:\Anaconda3\lib\site-packages\bs4\tests\test_builder_registry.py
