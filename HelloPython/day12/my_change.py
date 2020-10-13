@@ -18,13 +18,9 @@ form_class = uic.loadUiType("change_color.ui")[0]
 
 class WindowClass(QMainWindow, form_class) :
     def __init__(self) :
-        self.index = 0;
         super().__init__()
         self.setupUi(self)
         #버튼에 기능을 연결하는 코드
-        self.Blue.setStyleSheet("background-color: blue");
-        self.Red.setStyleSheet("background-color: red");
-        self.Green.setStyleSheet("background-color: green");
         self.btn_Change.clicked.connect(self.start);
         
     def start(self) :
@@ -34,37 +30,34 @@ class WindowClass(QMainWindow, form_class) :
     
     def changeColor(self):
         
-        for i in range(1, 10):
+        for i in range(1, 11):
+            time.sleep(1);
+            temp = self.lbl_B.styleSheet();
+            self.lbl_B.setStyleSheet(self.lbl_G.styleSheet());
+            self.lbl_G.setStyleSheet(self.lbl_R.styleSheet());
+            self.lbl_R.setStyleSheet(temp);
+            self.lbl_B.update();
+            self.lbl_G.update();
+            self.lbl_R.update();
+            print(i);
             
-            if(self.index %3 == 0):
-                self.Blue.setStyleSheet("background-color: blue");
-                self.Red.setStyleSheet("background-color: red");
-                self.Green.setStyleSheet("background-color: green");
+#             if(self.index %3 == 0):
+#                 self.Blue.setStyleSheet("background-color: blue");
+#                 self.Red.setStyleSheet("background-color: red");
+#                 self.Green.setStyleSheet("background-color: green");
+#             
+#             if(self.index %3==1):
+#                 self.Blue.setStyleSheet("background-color: green");
+#                 self.Red.setStyleSheet("background-color: blue");
+#                 self.Green.setStyleSheet("background-color: red");
+#                 
+#             if(self.index %3==2):
+#                 self.Blue.setStyleSheet("background-color: red");
+#                 self.Red.setStyleSheet("background-color: green");
+#                 self.Green.setStyleSheet("background-color: blue");
+#                 
+#             self.index += 1; 
             
-            if(self.index %3==1):
-                self.Blue.setStyleSheet("background-color: green");
-                self.Red.setStyleSheet("background-color: blue");
-                self.Green.setStyleSheet("background-color: red");
-                
-            if(self.index %3==2):
-                self.Blue.setStyleSheet("background-color: red");
-                self.Red.setStyleSheet("background-color: green");
-                self.Green.setStyleSheet("background-color: blue");
-                
-            self.index += 1;
-            time.sleep(1);       
-            
-            
-            
-            
-            
-            
-            
-#             temp = self.Blue.styleSheet();
-#             self.Blue.setStyleSheet(self.Green.styleSheet());
-#             self.Green.setStyleSheet(self.Red.styleSheet());
-#             self.Red.setStyleSheet(temp);
-#             time.sleep(1);
 #             if(i%3 == 0):
 #                 self.lbl_R.setStyleSheet("background-color : #ff0000");
 #                 self.lbl_G.setStyleSheet("background-color : #00ff00");
@@ -89,8 +82,6 @@ class WindowClass(QMainWindow, form_class) :
 #                 self.lbl_R.setText("G");
 #                 self.lbl_G.setText("B");
 #                 self.lbl_B.setText("R");
-    
-            print(i);
         
 
 if __name__ == "__main__" :

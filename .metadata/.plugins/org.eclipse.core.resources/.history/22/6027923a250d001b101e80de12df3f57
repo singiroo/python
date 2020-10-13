@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Naver Open API - local ::'맛집'</title>
+		<link>https://search.naver.com</link>
+		<description>Naver Search Result</description>
+		<lastBuildDate>Tue, 13 Oct 2020 16:23:04 +0900</lastBuildDate>
+		<total>5</total>
+		<start>1</start>
+		<display>5</display>
+		<item>
+			<title>이나니와요스케 시청점</title>
+			<link>http://www.food-biz.or.kr/</link>
+			<category>일식&gt;일식당</category>
+			<description></description>
+			<telephone></telephone>
+			<address>서울특별시 중구 을지로1가 192-11</address>
+			<roadAddress>서울특별시 중구 을지로 6</roadAddress>
+			<mapx>310027</mapx>
+			<mapy>551950</mapy>
+		</item>
+		<item>
+			<title>디라이프스타일키친</title>
+			<link>http://www.instagram.com/dlifestyle_kitchen</link>
+			<category>음식점&gt;양식</category>
+			<description></description>
+			<telephone></telephone>
+			<address>서울특별시 중구 태평로1가 84 서울파이낸스센터 지하 1층 101호</address>
+			<roadAddress>서울특별시 중구 세종대로 136 서울파이낸스센터 지하 1층 101호</roadAddress>
+			<mapx>309939</mapx>
+			<mapy>552293</mapy>
+		</item>
+		<item>
+			<title>디어와일드</title>
+			<link>http://soignerestaurantgroup.com/wp/dearwild</link>
+			<category>음식점&gt;양식</category>
+			<description></description>
+			<telephone></telephone>
+			<address>서울특별시 중구 태평로2가 23</address>
+			<roadAddress></roadAddress>
+			<mapx>309903</mapx>
+			<mapy>551877</mapy>
+		</item>
+		<item>
+			<title>덕수궁 리에제 와플</title>
+			<link>https://smartstore.naver.com/liegewaffle1/</link>
+			<category>카페,디저트&gt;와플</category>
+			<description></description>
+			<telephone></telephone>
+			<address>서울특별시 중구 태평로2가 365</address>
+			<roadAddress>서울특별시 중구 덕수궁길 5</roadAddress>
+			<mapx>309773</mapx>
+			<mapy>551893</mapy>
+		</item>
+		<item>
+			<title>스시조</title>
+			<link>https://www.josunhotel.com/hotel/westinSeoul.do</link>
+			<category>일식&gt;일식당</category>
+			<description></description>
+			<telephone></telephone>
+			<address>서울특별시 중구 소공동 87-1</address>
+			<roadAddress>서울특별시 중구 소공로 106</roadAddress>
+			<mapx>310134</mapx>
+			<mapy>551869</mapy>
+		</item>
+	</channel>
+</rss>

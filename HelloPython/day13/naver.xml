@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Naver Open API - local ::'대전 대흥동 맛집'</title>
+		<link>https://search.naver.com</link>
+		<description>Naver Search Result</description>
+		<lastBuildDate>Tue, 13 Oct 2020 16:33:11 +0900</lastBuildDate>
+		<total>5</total>
+		<start>1</start>
+		<display>5</display>
+		<item>
+			<title>피그로</title>
+			<link>http://instagram.com/pigro_dj</link>
+			<category>술집&gt;와인</category>
+			<description></description>
+			<telephone></telephone>
+			<address>대전광역시 중구 대흥동 251-5</address>
+			<roadAddress>대전광역시 중구 중교로 47-1 1층 PIGRO</roadAddress>
+			<mapx>348572</mapx>
+			<mapy>414076</mapy>
+		</item>
+		<item>
+			<title>진로집</title>
+			<link></link>
+			<category>음식점&gt;한식</category>
+			<description></description>
+			<telephone></telephone>
+			<address>대전광역시 중구 대흥동 314-1</address>
+			<roadAddress>대전광역시 중구 중교로 45-5</roadAddress>
+			<mapx>348547</mapx>
+			<mapy>414076</mapy>
+		</item>
+		<item>
+			<title>보문산호랭이</title>
+			<link>https://www.instagram.com/bomunsan_horaengi/</link>
+			<category>음식점&gt;양식</category>
+			<description></description>
+			<telephone></telephone>
+			<address>대전광역시 중구 대흥동 147-4</address>
+			<roadAddress>대전광역시 중구 중교로 84-1</roadAddress>
+			<mapx>348909</mapx>
+			<mapy>414185</mapy>
+		</item>
+		<item>
+			<title>스케치904칵테일카페</title>
+			<link>http://drumart2219.modoo.at</link>
+			<category>음식점&gt;카페,디저트</category>
+			<description></description>
+			<telephone></telephone>
+			<address>대전광역시 중구 대흥동 491-3</address>
+			<roadAddress>대전광역시 중구 보문로262번길 25</roadAddress>
+			<mapx>348415</mapx>
+			<mapy>414161</mapy>
+		</item>
+		<item>
+			<title>사무실카페</title>
+			<link>http://instagram.com/samusil_coffee</link>
+			<category>음식점&gt;카페,디저트</category>
+			<description></description>
+			<telephone></telephone>
+			<address>대전광역시 중구 대흥동 159-6</address>
+			<roadAddress>대전광역시 중구 대종로452번길 3 2층 카페 사무실</roadAddress>
+			<mapx>348851</mapx>
+			<mapy>414005</mapy>
+		</item>
+	</channel>
+</rss>

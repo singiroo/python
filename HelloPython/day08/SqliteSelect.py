@@ -2,9 +2,9 @@ import sqlite3
 
 print("sqlite3")
 
-conn = sqlite3.connect("mydb.db")
+conn = sqlite3.connect("../day13/crawlingdb.db")
 cursor = conn.cursor()
-sql = "select col01, col02, col03 from mytable"
+sql = "select * from crawling"
 cursor.execute(sql)
 
 for row in cursor:
