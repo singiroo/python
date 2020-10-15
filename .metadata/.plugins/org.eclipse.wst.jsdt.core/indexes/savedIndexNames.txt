@@ -1,5 +1,4 @@
 INDEX VERSION 1.4+D:\A_TeachingMaterial\8.Python\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3025964818.index
 1037527186.index
 897961118.index
 290267924.index

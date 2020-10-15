@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div data-viewid="menuInfo" data-root="" class="cont_menu">
+    <div class="particular_head">
+        <h3 class="tit_subject">메뉴</h3>
+        <span class="txt_updated">업데이트 <span class="txt_date"> 2020.10.14.</span></span>
+    </div>
+        <div class="wrap_list">
+            <div class="present_menu present_menu2">
+                    <a href="#none" data-type="menuboard" data-pidx="0" class="view_menu" style="background-image:url('//img1.daumcdn.net/thumb/C320x110/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2Freview%2F86101d95f9481f11c60de56358d82f289bfbeeeaefe102e4712ff94cdc51cb9f')" data-logtarget="" data-logevent="additional_info,menu,image1">
+                        <span class="frame_g"></span>
+                    </a>
+                    <a href="#none" data-type="menuboard" data-pidx="1" class="view_menu" style="background-image:url('//img1.daumcdn.net/thumb/C320x110/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2Freview%2Fed8f36ddc2525d17ba546dc6f50a74e55c814a28d1fc4ec6d9ffc11ccc2cc9db')" data-logtarget="" data-logevent="additional_info,menu,image2">
+                                <span class="menu_num">
+                                    <span class="txt_num"><span class="ico_comm ico_menu"> 갯수: </span>28</span>
+                                </span>
+                        <span class="frame_g"></span>
+                    </a>
+            </div>
+        </div>
+    <strong class="screen_out">메뉴 목록</strong>
+    <ul class="list_menu" data-maxpage="3">
+            <li class="photo_type" data-page="1"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">알밥 정식 (1인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>12,000</em>
+                    <p class="txt_menu">한판점심특선</p>
+                </div>
+            </li>
+            <li class="photo_type" data-page="1"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">황제 회정식 (1인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>19,000</em>
+                    <p class="txt_menu">점심특선</p>
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="1"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">물회 (1인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>17,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="1"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">스페셜 A (1인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>28,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="1"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">알탕 정식 (2인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>24,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="1"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">알탕 정식 (3인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>36,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">알탕 정식 (4인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>48,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">알탕 정식 (5인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>60,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">물회 정식(1인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>20,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">초밥 정식 (1인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>20,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">황제 물회 (2~3인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>55,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">황제 물회 (3~4인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>77,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">황제 물회 (4~5인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>99,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">랍스타 코스 (2마리)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>115,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">랍스타 코스 (3마리)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>159,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">랍스타 코스 (4마리)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>189,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">랍스타 코스 (5마리)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>219,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">흑마늘 전복 해신탕 (2~3인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>99,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">흑마늘 전복 해신탕 (3~4인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>119,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">흑마늘 전복 해신탕 (4~5인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>139,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="2"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 해물탕 (2인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>100,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 해물탕 (3인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>139,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 해물탕 (4인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>169,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 해물탕 (5인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>210,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 황제 물회 (2인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>100,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 황제 물회 (3인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>139,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 황제 물회 (4인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>169,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 황제 물회 (5인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>210,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 전복해신탕 (4인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>174,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 &amp; 전복해신탕 (5인)</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>215,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">랍스타 1마리 추가</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>35,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">활어회 추가</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>40,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">능이 추가</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>20,000</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">대게</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>시가</em>
+                    
+                </div>
+            </li>
+            <li class="nophoto_type opened_last" data-page="3"><!-- 이미지가 있는 경우 -->
+                <div class="info_menu">
+                    <em class="screen_out">명: </em><span class="loss_word">킹크랩</span>
+                    <em class="price_menu"><span class="screen_out">가격: </span>시가</em>
+                    
+                </div>
+            </li>
+    </ul>
+        <a href="#none" class="link_more link_close" data-logevent="additional_info,menu,more_menu">
+            <span class="open_txt hide">메뉴 더보기</span>
+            <span class="close_txt">메뉴 접기</span>
+            <span class="ico_comm ico_more"></span></a>
+</div>
