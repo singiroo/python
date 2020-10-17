@@ -59,7 +59,6 @@ public class Tetris02 extends JFrame {
 		
 		setBlock2DWithBlock();
 		
-		
 		stack2D[19][0] = 12;
 		stack2D[19][1] = 12;
 		stack2D[19][2] = 12;

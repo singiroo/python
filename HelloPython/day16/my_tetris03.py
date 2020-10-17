@@ -32,12 +32,15 @@ class WindowClass(QMainWindow, form_class) :
     def __init__(self) :
         super().__init__()
         self.setupUi(self)
+        
         self.block2D = []
         self.stack2D = []
         self.scrin2D = []
         self.lbl2D = []
-        self.block = Block(4);        
+        
         self.initBlock2Dstack2Dscrin2D()
+        
+        self.block = Block(4);        
         
         self.flagCollision = False;
         
@@ -75,7 +78,7 @@ class WindowClass(QMainWindow, form_class) :
         if self.block.kind == 2 or self.block.kind == 3 or self.block.kind == 4:
             if self.block.status == 1:
                 self.block.status = 2;
-            elif self.block.status ==2 :
+            elif self.block.status == 2 :
                 self.block.status = 1;
             
         
@@ -90,18 +93,18 @@ class WindowClass(QMainWindow, form_class) :
                 self.block.status = 1;
             
             
-    
+    ## block2D 와 stack2D의 정보를 scrin2D로 옮김
     def moveStackBlockToScrin(self):
         for i in range(20):
             for j in range(10):
                 self.scrin2D[i][j] = self.stack2D[i][j] + self.block2D[i][j]
                 
         
-    
+    ## block2D에 블록 정보를 입력
     def setBlock2DWithBlock(self):
         
-        for i in range(len(self.block2D)):
-            for j in range(len(self.block2D[i])):
+        for i in range(20):
+            for j in range(10):
                 self.block2D[i][j] = 0
         
         if self.block.kind == 1:
@@ -229,34 +232,51 @@ class WindowClass(QMainWindow, form_class) :
                 self.block2D[self.block.i][self.block.j] = self.block.kind;
                 self.block2D[self.block.i][self.block.j+1] = self.block.kind;
                 self.block2D[self.block.i+1][self.block.j+1] = self.block.kind;    
-             
+    
+    
+    
+    
+    def collisionTest(self):
+        for i in range(20):
+            if self.block2D[i][0] > 0:
+                self.flagCollision = True
+                break;
+    
+         
 
     def keyPressEvent(self, e):
         
-        i = self.block.i
-        j = self.block.j
+        self.flagCollision = False
         
+        itemp = self.block.i
+        jtemp = self.block.j
+        status = self.block.status
         
-    
         if e.key() == Qt.Key_Down:
             print("down")
-            if i <17 or i<18 or i<19:
-                self.block.i += 1
+            self.block.i += 1
+        
         if e.key() == Qt.Key_Up:
             print("up")
 #             self.block.i -= 1
             self.changeBlockStatus()
+        
         if e.key() == Qt.Key_Left:
-            print("left")
-            if self.block.j>3 or self.block.j>2 or self.block.j>1:
+            print("left")            
+            
+            self.collisionTest()
+            
+            if not self.flagCollision:
                 self.block.j -= 1
+        
         if e.key() == Qt.Key_Right:
+           
             print("right")
-            if self.block.j <= 8 or self.block.j <=7:
-                self.block.j += 1
+            
+            self.block.j += 1
         
         
-        print(self.flagCollision)
+#         print(self.flagCollision)
 #         print("========================before")
 #         print("block2D")
 #         self.print2D(self.block2D)
@@ -265,9 +285,16 @@ class WindowClass(QMainWindow, form_class) :
 #         print("scrin2D")
 #         self.print2D(self.scrin2D)
 #         
-     
-        self.setBlock2DWithBlock()
-        self.moveStackBlockToScrin()
+        try:
+            self.setBlock2DWithBlock()
+            self.moveStackBlockToScrin()
+            self.myRender()
+        except:
+            print("예외 발생!")
+            self.block.i = itemp
+            self.block.j = jtemp
+            self.block.status = status
+        
         
        
         
@@ -280,12 +307,12 @@ class WindowClass(QMainWindow, form_class) :
 #         self.print2D(self.scrin2D)
         
         
-        self.myRender()
+        
         print(self.block)    
         
         
         
-    
+    # block2D, stack2D, scrint2D  리스트 초기화
     def initBlock2Dstack2Dscrin2D(self):
         for i in range(20):
             self.block2D.append([0,0,0,0,0, 0,0,0,0,0])
@@ -293,7 +320,7 @@ class WindowClass(QMainWindow, form_class) :
             self.scrin2D.append([0,0,0,0,0, 0,0,0,0,0])
             
             
-            
+    #인자로 전한 리스트를 출력        
     def print2D(self,list):
         print("===============================print2D")
         for i in range(20):
@@ -303,7 +330,7 @@ class WindowClass(QMainWindow, form_class) :
             print()
         print("===============================print2D")
     
-    
+    # scrin2D 정보를 가지고 lbl2D에 색깔 칠하기
     def myRender(self):
         for i in range(len(self.scrin2D)):
             for j in range(len(self.scrin2D[i])):
