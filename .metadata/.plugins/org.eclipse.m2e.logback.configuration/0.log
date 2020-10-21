@@ -264,3 +264,4 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2020-10-17 11:31:20,065 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2020-10-19 13:24:24,059 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2020-10-20 13:38:46,217 [Worker-5] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-10-21 14:10:29,361 [Worker-38] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

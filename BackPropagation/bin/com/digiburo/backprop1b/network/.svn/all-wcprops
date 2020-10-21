@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network
+END
+AbstractArcNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/AbstractArcNode.java
+END
+SequenceGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/SequenceGenerator.java
+END
+BackProp.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/BackProp.java
+END
+Mathz.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/Mathz.java
+END
+MiddleNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/MiddleNode.java
+END
+Arc.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/Arc.java
+END
+InputNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/InputNode.java
+END
+OutputNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/OutputNode.java
+END
+AbstractNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/AbstractNode.java
+END
+NetWork.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/backprop1/!svn/ver/11/trunk/src/com/digiburo/backprop1b/network/NetWork.java
+END
+PatternList.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/PatternList.java
+END
+Pattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/backprop1/!svn/ver/3/trunk/src/com/digiburo/backprop1b/network/Pattern.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/backprop1/!svn/ver/11/trunk/src/com/digiburo/backprop1b/network/package.html
+END
